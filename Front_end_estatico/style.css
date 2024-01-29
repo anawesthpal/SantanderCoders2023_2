@@ -8,7 +8,6 @@ body {
   background-color: whitesmoke;
   color: rgb(52, 53, 65);
   font-size: 1.2em;
-  
 }
 
 main {
@@ -20,13 +19,14 @@ header {
   padding: 4rem;
   position: fixed;
   width: 100%;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.9)),
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.9)
+    ),
     url("img/banner-header.png");
   font-family: "Harry P", sans-serif;
   font-size: 1.5em;
   z-index: 1;
-  
 }
 
 h2 {
@@ -158,14 +158,12 @@ img {
 }
 
 .product {
-  /* display: inline-block; */
   display: flex;
   background-color: white;
   padding: 1rem;
   margin: 1rem;
   width: 50%;
   height: 40%;
-  /* vertical-align: top; */
   align-items: center;
   transition: transform 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
@@ -215,8 +213,10 @@ footer {
   padding: 1rem 0;
   font-family: "Harry P", sans-serif;
   margin-top: 2rem;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.9)),
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.9)
+    ),
     url("img/banner-footer.png");
 }
 
@@ -296,13 +296,13 @@ footer {
   font-size: 0.7em;
 }
 
-.footer-nav{
+.footer-nav {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.footer-profile img{
+.footer-profile img {
   width: 60px;
   height: 60px;
   border-radius: 50px;
@@ -330,9 +330,8 @@ footer {
 }
 
 .group-members .social-icons figure {
-  margin: 0 10px; /* Ajuste conforme necessário para espaçamento entre os ícones */
+  margin: 0 10px;
 }
-
 
 .footer-content figure {
   display: inline-block;
@@ -410,13 +409,11 @@ td {
     margin: 0 auto;
   }
 
-  nav ul{
+  nav ul {
     font-size: 15px;
     margin-top: 70px;
     text-align: center;
   }
-
-  
 }
 
 @media screen and (max-width: 768px) {
@@ -490,8 +487,7 @@ td {
     justify-content: space-around;
   }
 
-  nav ul li{
+  nav ul li {
     padding: 0px;
   }
-
 }
