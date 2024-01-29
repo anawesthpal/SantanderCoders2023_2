@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cardápio digital.">
+    <title>Café Encantado</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/harry-p" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/harry-p');
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Café Encantado</h1>
+        <div class="header-content clearfix">
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre nós</a></li>
+                    <li class="dropdown">
+                        <a href="#producrs">Produtos</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#hot-drinks">Bebidas Quentes</a></li>
+                            <li><a href="#cold-drinks">Bebidas geladas</a></li>
+                            <li><a href="#sweet-foods">Doces</a></li>
+                            <li><a href="#salty-foods">Salgadas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#prices">Preços</a></li>
+                    <li><a href="#registration">Cadastro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <section id="home" class="home-content">
+                <div>
+                    <h2>Bem-vindo ao Nosso Cardápio Digital</h2>
+                    <p>Adentre no "Café Encantado: Café dos Feiticeiros", onde cada canto é permeado por encantamentos e
+                        cada xícara de café esconde poções de criatividade. Aqui, o aroma do café fresco se mistura com
+                        o sussurro de feitiços antigos, criando uma atmosfera acolhedora que teria feito os próprios
+                        fundadores de Hogwarts se sentirem em casa.
+                    </p>
+                </div>
+            </section>
+
+
+            <div class="first-container">
+
+                <section id="about" class="about-content">
+                    <div>
+                        <h2 id="about-title">"A Lenda do Grão Mágico":</h2>
+                        <p>Diz a lenda que, há séculos, em um vale escondido, crescia uma planta de café diferente de
+                            todas as outras. Seus grãos brilhavam sob a luz da lua e eram guardados por criaturas
+                            místicas. Esses grãos mágicos, quando preparados, liberavam um vapor encantado capaz de
+                            despertar a criatividade e aguçar os sentidos.
+                            Mestres bruxos e bruxas viajavam de terras distantes para provar este café extraordinário,
+                            encontrando inspiração e sabedoria em cada gole. Com o passar do tempo, a receita desse café
+                            mágico foi passada secretamente entre gerações de feiticeiros.Hoje, no "Café Encantado",
+                            recriamos essa bebida lendária, misturando tradições antigas com o encanto moderno. Cada
+                            xícara servida aqui carrega um pouco dessa história mágica, conectando os amantes do café a
+                            um passado místico e inspirador.
+                        </p>
+                    </div>
+                </section>
+
+                <section id="events">
+                    <aside class="aside-content">
+                        <h2>Eventos Especiais, Workshops e Palestras</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Evento</th>
+                                    <th>Nome</th>
+                                    <th>Dia</th>
+                                    <th>Horário</th>
+                                    <th>Preço</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2" class="rowspan-cell">Palestras</td>
+                                    <td>"Inspiração Matinal"</td>
+                                    <td>Segunda</td>
+                                    <td>09:00 - 11:00</td>
+                                    <td>R$50</td>
+                                </tr>
+                                <tr>
+                                    <td>"Diálogos Criativos"</td>
+                                    <td>Terça</td>
+                                    <td>09:00 - 11:00</td>
+                                    <td>R$50</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2" class="rowspan-cell">Workshops</td>
+                                    <td>"Arte com Café"</td>
+                                    <td>Quarta</td>
+                                    <td>14:00 - 16:00</td>
+                                    <td>R$100</td>
+                                </tr>
+                                <tr>
+                                    <td>"Sabor e Saber"</td>
+                                    <td>Quinta</td>
+                                    <td>14:00 - 16:00</td>
+                                    <td>R$100</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="3" class="rowspan-cell">Eventos Especiais</td>
+                                    <td>"Noite de Jazz e Poesia"</td>
+                                    <td>Sexta</td>
+                                    <td>18:00 - 21:00</td>
+                                    <td>R$150</td>
+                                </tr>
+                                <tr>
+                                    <td>"Sábado Cultural"</td>
+                                    <td>Sábado</td>
+                                    <td>18:00 - 21:00</td>
+                                    <td>R$150</td>
+                                </tr>
+                                <tr>
+                                    <td>"Manhã de Meditação"</td>
+                                    <td>Domingo</td>
+                                    <td>10:00 - 12:00</td>
+                                    <td>R$80</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </aside>
+                </section>
+            </div>
+
+
+            <section id="products" class="section-products clearfix">
+                <div class="products-content">
+                    <h2>Nossos Produtos</h2>
+                    <h3>Bebidas Quentes</h3>
+
+                    <div class="first-product-container">
+                        <div class="product">
+                            <figure>
+                                <img src="img/cafe-do-caldeirao-furado.png" alt="Café com eite de aveia e mel">
+                                <figcaption class="food_title">Café do Caldeirão Furado: </figcaption>
+                                <figcaption>Um café expresso rico e intenso com um toque de canela e noz-moscada,
+                                    servido com chantilly e um pequeno bastão de licorice como enfeite.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="product">
+                            <figure>
+                                <img src="img/cafe-patrono.png" alt="Café com leite de aveia e baunilha">
+                                <figcaption class="food_title">Café Patrono: </figcaption>
+                                <figcaption>Uma mistura suave de café com leite de aveia, mel e uma pitada de baunilha,
+                                    coberto com espuma de leite e um pó de glitter comestível para dar um efeito mágico.
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="product">
+                            <figure>
+                                <img src="img/cha-de-pocoes.png" alt="Chá preto com especiarias">
+                                <figcaption class="food_title">Chá de Poções: </figcaption>
+                                <figcaption>Um chá preto aromático misturado com especiarias mágicas como cardamomo,
+                                    cravo e um toque de gengibre, perfeito para aquecer em noites frias.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+
+
+                    <h3>Bebidas Geladas</h3>
+
+
+                    <div class="second-product-container">
+                        <div class="product">
+                            <figure>
+                                <img src="img/fraputino-de-feiticos.png" alt="Café gelado batido com creme de avelã">
+                                <figcaption class="food_title">Frappuccino de Feitiços: </figcaption>
+                                <figcaption>Um café gelado batido com creme de avelã, coberto com chantilly e polvilhado
+                                    com pó de ouro comestível e pequenas estrelas de açúcar.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="product">
+                            <figure>
+                                <img src="img/cafe-gelado-da-lufa-lufa.png"
+                                    alt="Café gelado com xarope de baunilha e caramelo">
+                                <figcaption class="food_title">Café Gelado do Lufa-Lufa: </figcaption>
+                                <figcaption>Um refrescante café gelado com leite de amêndoas, xarope de baunilha e um
+                                    toque de caramelo, servido com gelo e decorado com um sorriso de caramelo no copo.
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="product">
+                            <figure>
+                                <img src="img/suco-de-abobora-gelado.png"
+                                    alt="Suco de abóbora gelado com gengibre e canela">
+                                <figcaption class="food_title">Suco de Abóbora Gelado: </figcaption>
+                                <figcaption>Um suco de abóbora bem gelado, misturado com gengibre e um toque de canela,
+                                    perfeito para um dia quente de verão.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+
+                    <h3>Doces</h3>
+
+                    <div class="third-product-container">
+                        <div class="product">
+                            <figure>
+                                <img src="img/feijoezinhos.png" alt="Balas de goma">
+                                <figcaption class="food_title">Feijõezinhos de Todos os Sabores: </figcaption>
+                                <figcaption>Uma variedade de balas de goma com sabores surpreendentes e exóticos, desde
+                                    frutas até sabores mais ousados como grama e pimenta.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="product">
+                            <figure>
+                                <img src="img/varinhas-de-licore.png" alt="Filé Florença">
+                                <figcaption class="food_title">Varinhas de Licorice: </figcaption>
+                                <figcaption>Longas tiras de licorice que imitam varinhas mágicas, algumas com recheios
+                                    de frutas ou creme.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="product">
+                            <figure>
+                                <img src="img/cupcakes-de-caldeirao.png" alt="Cupcakes de chocolate">
+                                <figcaption class="food_title">Cupcakes de Caldeirão: </figcaption>
+                                <figcaption>Cupcakes de chocolate com cobertura de ganache e decorados para parecerem
+                                    pequenos caldeirões, com "poções" comestíveis coloridas no topo.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+
+
+                    <h3>Salgados</h3>
+
+                    <div class="fourth-product-container">
+                        <div class="product">
+                            <figure>
+                                <img src="img/torresmos-de-dragrao.png" alt="Torresmo apimentado">
+                                <figcaption class="food_title">Torresmos de Dragão: </figcaption>
+                                <figcaption>Petiscos crocantes e apimentados que lembram a pele grossa de um dragão,
+                                    ideais para acompanhar uma cerveja amanteigada.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="product">
+                            <figure>
+                                <img src="img/pasteis-de-cerveja-amanteigada.png" alt="Pasteis assados com creme">
+                                <figcaption class="food_title">Pastéis de Cerveja Amanteigada: </figcaption>
+                                <figcaption>Pequenos pastéis assados recheados com um creme saboroso que lembra a famosa
+                                    cerveja amanteigada, perfeitos para um lanche rápido.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="product">
+                            <figure>
+                                <img src="img/bolinhos-de-sapo-de-chocolate.png"
+                                    alt="Bolinhos de queijo com ervas finas">
+                                <figcaption class="food_title">Bolinhos de Sapo de Chocolate (versão salgada):
+                                </figcaption>
+                                <figcaption>Pequenos bolinhos salgados em forma de sapo, feitos com queijo e ervas
+                                    finas.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <section id="prices" class="prices">
+                        <div>
+                            <h2>Tabela de Preços</h2>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Produto</th>
+                                        <th>Descrição</th>
+                                        <th>Preço (R$)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Café do Caldeirão Furado</td>
+                                        <td>Um café expresso rico com canela, noz-moscada e chantilly.</td>
+                                        <td>18,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Café Patrono</td>
+                                        <td>Café com leite de aveia, mel, baunilha e espuma de leite.</td>
+                                        <td>16,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chá de Poções</td>
+                                        <td>Chá preto com especiarias como cardamomo e gengibre.</td>
+                                        <td>14,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Frappuccino de Feitiços</td>
+                                        <td>Café gelado batido com creme de avelã e chantilly.</td>
+                                        <td>20,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Café Gelado do Lufa-Lufa</td>
+                                        <td>Café gelado com leite de amêndoas, baunilha e caramelo.</td>
+                                        <td>18,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Suco de Abóbora Gelado</td>
+                                        <td>Suco de abóbora com gengibre e canela.</td>
+                                        <td>15,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Feijõezinhos de Todos os Sabores</td>
+                                        <td>Balas de goma com sabores variados.</td>
+                                        <td>12,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Varinhas de Licorice</td>
+                                        <td>Tiras de licorice que imitam varinhas mágicas.</td>
+                                        <td>10,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cupcakes de Caldeirão</td>
+                                        <td>Cupcakes de chocolate com cobertura de ganache.</td>
+                                        <td>15,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Torresmos de Dragão</td>
+                                        <td>Petiscos crocantes e apimentados.</td>
+                                        <td>14,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pastéis de Cerveja Amanteigada</td>
+                                        <td>Pequenos pastéis assados com creme de cerveja amanteigada.</td>
+                                        <td>13,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bolinhos de Sapo de Chocolate (versão salgada)</td>
+                                        <td>Bolinhos salgados em forma de sapo.</td>
+                                        <td>12,00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="registration-form">
+                        <h2>Registre-se para Ideias Brilhantes</h2>
+                        <p>Inscreva-se para receber atualizações, ideias inspiradoras e convites para eventos especiais.
+                        </p>
+                        <form action="#" method="post">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="password">Senha</label>
+                            <input type="password" id="password" name="password" required>
+
+                            </select>
+
+                            <input type="submit" value="Inscrever-se">
+                        </form>
+                    </section>
+                </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <nav class="footer-nav">
+                <div class="footer-members">
+                    <figure class="footer-profile">
+                        <img src="img/ana.jpeg" alt="Perfil Ana">
+                    </figure>
+                    <h2>Ana</h2>
+                    <div class="social-icons">
+                        <figure>
+                            <a href="https://github.com/anawesthpal" target="_blank" title="GitHub">
+                                <img src="img/github-icon.jpg" alt="Ícone do GitHub">
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="https://www.linkedin.com/in/anawesthpal/" target="_blank" title="Linkedin">
+                                <img src="img/linkedin-icon.jpg" alt="Ícone do LinkedIn">
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="footer-members">
+                    <figure class="footer-profile">
+                        <img src="img/jefferson.jpeg" alt="Perfil Jefferson">
+                    </figure>
+                    <h2>Jefferson</h2>
+                    <div class="social-icons">
+                        <figure>
+                            <a href="https://github.com/Jeffersonlpu" target="_blank" title="GitHub">
+                                <img src="img/github-icon.jpg" alt="Ícone do GitHub">
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="https://www.linkedin.com/in/jefferson-silva-br/" target="_blank" title="Linkedin">
+                                <img src="img/linkedin-icon.jpg" alt="Ícone do LinkedIn">
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="footer-members">
+                    <figure class="footer-profile">
+                        <img src="img/matheus.jpg" alt="Perfil Matheus">
+                    </figure>
+                    <h2>Matheus</h2>
+                    <div class="social-icons">
+                        <figure>
+                            <a href="https://github.com/matheuslpiresm" target="_blank" title="GitHub">
+                                <img src="img/github-icon.jpg" alt="Ícone do GitHub">
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="https://www.linkedin.com/in/matheuslpires/" target="_blank" title="Linkedin">
+                                <img src="img/linkedin-icon.jpg" alt="Ícone do LinkedIn">
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="footer-members">
+                    <figure class="footer-profile">
+                        <img src="img/ocelia.jpeg" alt="Perfil Océlia">
+                    </figure>
+                    <h2>Ocelia</h2>
+                    <div class="social-icons">
+                        <figure>
+                            <a href="https://github.com/oceliasousa" target="_blank" title="GitHub">
+                                <img src="img/github-icon.jpg" alt="Ícone do GitHub">
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="https://www.linkedin.com/in/oceliasousa/" target="_blank" title="Linkedin">
+                                <img src="img/linkedin-icon.jpg" alt="Ícone do LinkedIn">
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+        </div>
+        </nav>
+        </div>
+        <p>&copy; 2024 Cardápio Digital. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

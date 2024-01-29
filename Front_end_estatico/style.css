@@ -1,0 +1,497 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  color: rgb(52, 53, 65);
+  font-size: 1.2em;
+  
+}
+
+main {
+  padding-top: 180px;
+}
+
+header {
+  text-transform: uppercase;
+  padding: 4rem;
+  position: fixed;
+  width: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.9)),
+    url("img/banner-header.png");
+  font-family: "Harry P", sans-serif;
+  font-size: 1.5em;
+  z-index: 1;
+  
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 0.5em;
+  font-size: 1.5em;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.2em;
+  padding: 0.5em;
+}
+
+img {
+  width: 7em;
+  height: 7em;
+  margin-bottom: 0.5rem;
+}
+
+.header-content {
+  right: 2rem;
+  vertical-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header-content a {
+  text-decoration: none;
+  color: rgb(52, 53, 65);
+}
+
+.header-content nav ul li {
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 150px;
+  border-radius: 1rem;
+}
+
+.dropdown-content a {
+  padding: 8px 8px;
+  display: block;
+  border-radius: 1rem;
+}
+
+.food_title {
+  font-weight: bold;
+}
+
+.dropdown-content a {
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.first-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-content {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.home-content p {
+  margin-bottom: 20px;
+}
+
+.products-content {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.first-product-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-product-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.third-product-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.fourth-product-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.product {
+  /* display: inline-block; */
+  display: flex;
+  background-color: white;
+  padding: 1rem;
+  margin: 1rem;
+  width: 50%;
+  height: 40%;
+  /* vertical-align: top; */
+  align-items: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.product img {
+  width: 8.75rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  margin-bottom: 0.62rem;
+}
+
+.product figcaption {
+  margin-bottom: 0.31rem;
+}
+
+.product:hover {
+  transform: scale(1.1);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+input[type="password"] {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  width: 100%;
+}
+
+input[type="submit"] {
+  background-color: rgb(52, 53, 65);
+  border: none;
+  color: whitesmoke;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1em;
+}
+
+input[type="submit"]:hover {
+  background-color: #6868ff;
+  border-color: #6868ff;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  font-family: "Harry P", sans-serif;
+  margin-top: 2rem;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.9)),
+    url("img/banner-footer.png");
+}
+
+.footer-content {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-content img {
+  height: 50px;
+  width: auto;
+  box-shadow: none;
+}
+
+.registration-form {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aside-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aside-content table {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aside-content th {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  padding: 10px 15px;
+  text-align: left;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  text-align: center;
+}
+
+.aside-content td {
+  background-color: rgb(248, 248, 248);
+  padding: 10px 15px;
+  border-bottom: 2px solid rgb(234, 234, 234);
+}
+
+.aside-content .rowspan-cell {
+  background-color: rgb(221, 221, 221);
+}
+
+.aside-content tbody tr td:first-child {
+  border-bottom-left-radius: 8px;
+}
+
+.aside-content tbody tr td:last-child {
+  border-bottom-right-radius: 8px;
+}
+
+.about-content {
+  width: 40%;
+  margin: 20px 5%;
+  font-family: "Harry P", sans-serif;
+  font-size: 1.6em;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  text-align: center;
+  float: right;
+}
+
+.about-content p {
+  text-align: center;
+  font-family: serif;
+  font-size: 0.7em;
+}
+
+.footer-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer-profile img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.group-members {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.group-members figure {
+  margin-bottom: 10px; /* Ajuste conforme necessário para espaçamento entre os elementos */
+}
+
+.group-members img {
+  max-width: 100%;
+  height: auto;
+}
+
+.group-members .social-icons {
+  display: flex;
+}
+
+.group-members .social-icons figure {
+  margin: 0 10px; /* Ajuste conforme necessário para espaçamento entre os ícones */
+}
+
+
+.footer-content figure {
+  display: inline-block;
+  transition: transform 0.7s ease;
+}
+
+.footer-content figure:hover {
+  transform: scale(1.3);
+}
+
+.prices div table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  padding: 10em;
+  text-align: left;
+  width: 60%;
+  border-collapse: none;
+  background-color: white;
+  font-size: 1.2em;
+  margin-top: 1em;
+}
+
+.prices div table th,
+td {
+  padding: 15px 15px;
+  border-bottom: 2px solid rgb(234, 234, 234);
+}
+
+.prices div table tr {
+  transition: background-color 0.3s ease;
+}
+
+.prices div table tr:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.registration-form p {
+  padding-bottom: 0.5em;
+}
+
+.registration-form h2 {
+  margin-top: 2em;
+}
+
+.products-content h2 {
+  font-size: 1.5em;
+  margin-top: 2em;
+}
+
+@media screen and (max-width: 950px) {
+  .first-container {
+    flex-direction: column;
+  }
+
+  .about-content {
+    width: 80%;
+    margin-bottom: 10%;
+  }
+
+  .aside-content table {
+    width: 80%;
+  }
+
+  header {
+    padding: 40px;
+  }
+
+  h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  nav {
+    margin: 0 auto;
+  }
+
+  nav ul{
+    font-size: 15px;
+    margin-top: 70px;
+    text-align: center;
+  }
+
+  
+}
+
+@media screen and (max-width: 768px) {
+  .first-product-container {
+    flex-direction: column;
+  }
+
+  .second-product-container {
+    flex-direction: column;
+  }
+
+  .third-product-container {
+    flex-direction: column;
+  }
+
+  .fourth-product-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .products-content {
+    width: auto;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .aside-content {
+    width: auto;
+  }
+
+  .aside-content h2 {
+    height: auto;
+  }
+
+  .aside-content table {
+    width: 20%;
+    font-size: 0.7rem;
+  }
+
+  .aside-content th {
+    padding: 0.42rem 0.73rem;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+  }
+
+  .aside-content td {
+    padding: 0.42rem 0.73rem;
+  }
+
+  .aside-content tbody tr td:first-child {
+    border-bottom-left-radius: 0.3rem;
+  }
+
+  .aside-content tbody tr td:last-child {
+    border-bottom-right-radius: 0.3rem;
+  }
+
+  header {
+    padding: 40px;
+  }
+
+  h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  nav ul {
+    font-size: 15px;
+    margin-top: 70px;
+    justify-content: space-around;
+  }
+
+  nav ul li{
+    padding: 0px;
+  }
+
+}
